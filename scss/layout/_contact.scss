@@ -1,0 +1,70 @@
+.contact {
+  background-color: $primary-ligth-coral;
+  background-image: url(../../images/svg/contact-bg-img.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.contact__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  padding: 7.6rem 0rem;
+}
+.contact__title_wrapper {
+  h2 {
+    font-weight: 700;
+    font-size: $h2-font-size;
+    line-height: $h2-lh;
+    color: $secondary-sacramento-state-green;
+  }
+}
+.contact__btn_wrapper {
+}
+@media (max-width: 915px) {
+  .contact__title_wrapper {
+    h2 {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .contact__wrapper {
+    padding: 3rem;
+  }
+  .contact__wrapper {
+    justify-content: end;
+    gap: 5%;
+  }
+  .contact__title_wrapper {
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+  .button {
+    padding: 0.7rem 2.5rem 0.9rem 2.5rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .contact__wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 655px) {
+  .contact__wrapper {
+    padding: 6rem 0rem;
+    align-items: end;
+  }
+  .contact-button {
+    display: inline-block;
+  }
+  .contact__title_wrapper {
+    h2 {
+      text-align: end;
+    }
+  }
+}
