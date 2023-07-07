@@ -1,0 +1,117 @@
+.delivering {
+  background-color: $secondary-deep-jungle-green;
+  background-image: url(../../images/svg/delivering-bg-img-bottom.svg),
+    url(../../images/svg/delivering-bg-img.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom, left top;
+}
+.delivering__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14rem 0rem;
+}
+.delivering__titlep_wrapper {
+  margin-bottom: 5.6rem;
+  width: 100%;
+  max-width: 932px;
+  h2 {
+    font-weight: 700;
+    font-size: $h2-font-size;
+    line-height: $h2-lh;
+    color: $primary-whtie;
+    text-align: center;
+  }
+  span {
+    color: $secondary-rapture-blue;
+  }
+}
+.delivering__info_wrapper {
+  display: flex;
+  gap: 3rem;
+}
+.info-wrapper__box {
+  background-image: url(../../images/svg/delivering-bg-img-center.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.delivering-info__text {
+  text-align: center;
+  padding-top: 3.6rem;
+  font-weight: 600;
+  font-size: $body2-font-size;
+  line-height: $body2-lh;
+  color: $primary-whtie;
+  margin-bottom: 2.4rem;
+}
+.delivering-info__text_name {
+  font-weight: 700;
+  font-size: $body1-font-size;
+  line-height: $body1-lh;
+  color: $secondary-rapture-blue;
+  margin-bottom: 2px;
+}
+.delivering-info__text_job {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.38;
+  color: $primary-whtie;
+  margin-bottom: 3.2rem;
+}
+
+@media (max-width: 1090px) {
+  .delivering__info_wrapper {
+    flex-direction: column;
+  }
+
+  .info-wrapper__box {
+    max-width: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .delivering__wrapper {
+    padding: 10rem 0rem;
+  }
+
+  .delivering__titlep_wrapper {
+    max-width: 573px;
+    h2 {
+      font-size: 3.2rem;
+    }
+  }
+}
+@media (max-width: 580px) {
+  .delivering__titlep_wrapper {
+    max-width: 327px;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .delivering-info__text {
+    margin-bottom: 0rem;
+    font-size: 1.2rem;
+  }
+  .delivering-info__text_name {
+    font-size: 1.4rem;
+  }
+  .delivering-info__text_job {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 370px) {
+  .delivering__titlep_wrapper {
+    padding-top: 7rem;
+  }
+  .delivering__info_wrapper {
+    margin-bottom: 5rem;
+  }
+}
