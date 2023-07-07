@@ -1,0 +1,114 @@
+.build {
+  background-color: $secondary-sacramento-state-green;
+  background-image: url(../../images/svg/build-bg-img.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.build-container {
+  display: flex;
+  padding: 14rem 0rem;
+  justify-content: space-between;
+}
+.build__title_wrapper {
+  width: 100%;
+  max-width: 445px;
+}
+.build__title {
+  font-weight: 700;
+  font-size: $h2-font-size;
+  line-height: $h2-lh;
+  color: $primary-whtie;
+}
+.build-title__divider {
+  color: $primary-ligth-coral;
+  margin-bottom: 5.4rem;
+}
+.build__content_wrapper {
+  width: 100%;
+  max-width: 540px;
+  padding-top: 5.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.build-content__box {
+  display: flex;
+  gap: 2.6rem;
+}
+
+.build-content__title {
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  font-size: $body1-font-size;
+  line-height: $body1-lh;
+  color: $primary-ligth-coral;
+}
+.buil-content__info {
+  font-weight: 600;
+  font-size: $body2-font-size;
+  line-height: $body2-lh;
+  color: $primary-whtie;
+}
+
+@media (max-width: 950px) {
+  .build {
+    background-position: right top;
+  }
+  .build-container {
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+  .build__title_wrapper {
+    margin-left: 10%;
+  }
+  .build__content_wrapper {
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .build-container {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+  .build__title_wrapper {
+    max-width: 300px;
+  }
+  .build__title {
+    font-size: 3.5rem;
+  }
+  .build-content__box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .build-content__text_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  .buil-content__info {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 460px) {
+  .build-container {
+    padding-bottom: 0;
+  }
+
+  .build__title {
+    font-size: 3rem;
+  }
+
+  .build-title__divider {
+    margin-bottom: 3rem;
+  }
+  .build__title_wrapper {
+    margin-left: 0;
+  }
+}
