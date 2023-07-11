@@ -40,8 +40,22 @@
 }
 
 body {
+  @include fontSettings($body2-font-size, 700, $body2-lh, $primary-whtie);
   font-family: $main-font-family;
-  font-size: $body2-font-size;
-  line-height: $body2-lh;
-  color: $primary-whtie;
+}
+h1 {
+  @include fontSettings(
+    $h1-small-font-size,
+    700,
+    $h1-small-lh,
+    $secondary-dark-green
+  );
+}
+
+h2 {
+  @include fontSettings($h2-font-size, 700, $h2-lh, $secondary-dark-green);
+}
+
+h3 {
+  @include fontSettings($h3-font-size, 700, $h3-lh, $secondary-dark-green);
 }

@@ -1,9 +1,7 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  @include reset;
 }
 
 *:focus {
@@ -78,4 +76,6 @@ footer {
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+a .footer__icon:hover {
 }

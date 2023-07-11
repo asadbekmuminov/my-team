@@ -1,0 +1,110 @@
+.some-of {
+  background-color: $secondary-sacramento-state-green;
+  background-image: url(../../images/about-img/about-some-of-img-bg.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.some-of-container {
+  h2 {
+    @include fontSettings($h2-font-size, 700, $h2-lh, $primary-whtie);
+    text-align: center;
+    padding-top: 14rem;
+    margin-bottom: 6.4rem;
+  }
+}
+.some-of__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14rem;
+}
+.some-of-img-the-verge {
+}
+.some-of-img-jakarta {
+}
+.some-of-img-the-guardian {
+}
+.some-of-img-teachradar {
+}
+.some-of-img-gadgeds {
+}
+
+@media (max-width: 950px) {
+  .some-of {
+    background-color: $secondary-sacramento-state-green;
+    background-image: url(../../images/about-img/about-some-of-responsive-img-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .some-of__wrapper {
+    padding-bottom: 5rem;
+  }
+
+  .some-of-container {
+    h2 {
+      @include fontSettings(3.5rem, 700, $h2-lh, $primary-whtie);
+      padding-top: 10rem;
+    }
+  }
+  .some-of-img-the-verge {
+    width: 13rem;
+    height: 2.4rem;
+    object-fit: contain;
+  }
+  .some-of-img-jakarta {
+    width: 14rem;
+    height: 2rem;
+    object-fit: contain;
+  }
+  .some-of-img-the-guardian {
+    width: 14rem;
+    height: 2rem;
+    object-fit: contain;
+  }
+  .some-of-img-teachradar {
+    width: 13rem;
+    height: 2rem;
+    object-fit: contain;
+  }
+  .some-of-img-gadgeds {
+    width: 7rem;
+    height: 3.5rem;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 720px) {
+  .some-of__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 7rem;
+  }
+  .some-of-img-the-verge {
+    width: 16.5rem;
+    height: 2.8rem;
+    object-fit: contain;
+  }
+  .some-of-img-jakarta {
+    width: 18.4rem;
+    height: 2.3rem;
+    object-fit: contain;
+  }
+  .some-of-img-the-guardian {
+    width: 18rem;
+    height: 2.8rem;
+    object-fit: contain;
+  }
+  .some-of-img-teachradar {
+    width: 16.5rem;
+    height: 2.8rem;
+    object-fit: contain;
+  }
+  .some-of-img-gadgeds {
+    width: 9.8rem;
+    height: 4.5rem;
+    object-fit: contain;
+  }
+}

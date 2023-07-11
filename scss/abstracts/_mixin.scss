@@ -1,0 +1,17 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin fontSettings($fontSize, $fonWeight, $lineHeight, $color) {
+  font-size: $fontSize;
+  font-weight: $fonWeight;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin wrapperSettings($maxW) {
+  width: 100%;
+  max-width: $maxW;
+}
